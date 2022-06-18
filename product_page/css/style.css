@@ -1,0 +1,113 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background-color: #eee; }
+
+.container {
+  padding: 5rem auto;
+  display: grid;
+  grid-template-rows: 90px 1fr;
+  grid-template-columns: repeat(10, 1fr); }
+
+.product {
+  background-color: burlywood;
+  grid-row: 2 / 3;
+  grid-column: 2 / span 8;
+  padding: 3rem 2rem; }
+
+.nav {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: max-content 12rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.2rem 0; }
+  .nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    grid-column: 1 / 2; }
+  .nav__link {
+    margin-right: 2rem; }
+    .nav__link :link {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #666; }
+  .nav__right {
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    grid-column: 2 / -1; }
+  .nav svg {
+    width: 2.5rem;
+    height: 2.3rem;
+    margin-right: 1.5rem; }
+
+.img-avatar {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  margin-left: 1.5rem; }
+
+.logo {
+  margin-right: 4rem; }
+  .logo :link {
+    text-decoration: none;
+    color: #111;
+    font-size: 2rem; }
+
+.icon {
+  width: 2.2rem;
+  height: 2rem; }
+  .icon__cart {
+    position: relative; }
+  .icon__menu {
+    height: 4rem;
+    width: 4rem; }
+
+.badge--pill-cart {
+  background-color: #f0a00af6;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: .1rem .5rem;
+  border-radius: 5px;
+  position: absolute;
+  top: -.7rem;
+  right: -.7rem; }
+
+.header {
+  grid-column: 2 / -2;
+  align-items: center;
+  display: grid;
+  grid-template-columns: min-content max-content max-content;
+  column-gap: 2rem;
+  border-bottom: 1px solid #ccc; }
+
+.menu {
+  position: relative;
+  top: -2rem;
+  grid-column: 1 / 2;
+  align-content: center;
+  justify-self: center;
+  margin-right: 2.5rem;
+  display: none; }
+  .menu input {
+    position: absolute;
+    top: .8rem;
+    left: .17rem;
+    display: none; }
+  .menu label {
+    position: absolute;
+    top: 0rem;
+    left: 0; }

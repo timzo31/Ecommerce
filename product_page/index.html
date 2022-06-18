@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <nav class="nav navigation">
+        <ul class="menu">
+          <input type="checkbox" id="menu" name="menu" class="menu__input">
+          <label for="menu">
+            <svg class="icon__menu" class="menu_label">
+              <use xlink:href="img/sprite.svg#icon-menu3" ></use>
+            </svg>
+          </label>
+        </ul>
+        <a href="#"></a><img src="" alt="#" class="logo">Sneakers</a>
+        <ul class="nav__links">
+          <li class="nav__link"><a href="#">Collections</a></li>
+          <li class="nav__link"><a href="#">Men</a></li>
+          <li class="nav__link"><a href="#">Women</a></li>
+          <li class="nav__link"><a href="#">About</a></li>
+          <li class="nav__link"><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav__right">
+          <div class="icon icon__cart">
+            <svg>
+              <use xlink:href="img/sprite.svg#icon-cart" ></use>
+            </svg>
+            <p class="badge--pill badge--pill-cart">3</p>
+          </div>
+            <img src="img/image-avatar.png" alt="Avatar" class="img-avatar">
+          
+        </div>
+      </nav>
+    </header>
+
+    <div class="product">
+      <div class="product__image">
+
+      </div>
+      <div class="product__detail">
+        <h4 class="">Sneakers Company</h4>
+        <h3 class="product__title">Fall Limited Edition Sneakers</h3>
+        <p class="product__description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="prices">
+          <h3 class="product__price--promo">$125.00</h3>
+          <p class="badge--pill badge--pill-promo">50%</p>
+          <h4 class="product__price">$250.00</h4>
+        </div>
+      </div>
+      <div class="items">
+        <div class="item">
+          <svg class="icon icon__decrement">
+            <use xlink:href="img/sprite.svg#icon-minus"></use>
+          </svg>
+          <div class="item__total">0</div>
+          <svg class="icon  icon__increment">
+            <use xlink:href="img/sprite.svg#icon-plus"></use>
+          </svg>
+        </div>
+        <button class="btn item__add-to-cart">
+          <svg class="icon icon__cart icon-white">
+            <use xlink:href="img/sprite#icon-cart"></use>
+          </svg> Add to cart
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">TIMERA Mamadou</a>.
+  </div>
+  
+</body>
+</html>
